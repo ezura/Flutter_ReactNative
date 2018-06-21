@@ -178,4 +178,22 @@ class SomethingFast extends Component {
   - https://medium.com/@danielsternlicht/adding-localization-i18n-g11n-to-a-react-native-project-with-rtl-support-223f39a8e6f2
   - json に書く
 
+---
 
+## 難読化
+
+### flutter
+* Release build では標準で難読化される
+* Native code の難読化時は flutter が影響を受けないように設定する必要がある
+
+### React Native
+* Release build では標準で難読化される
+
+---
+
+## テスト
+
+### flutter
+* Dart の言語自体に Test が付属している
+
+### React Native
