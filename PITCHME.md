@@ -187,7 +187,7 @@ class SomethingFast extends Component {
 * Native code の難読化時は flutter が影響を受けないように設定する必要がある
 
 ### React Native
-* Release build では標準で難読化される
+* Release build では標準で minify される
 
 ---
 
