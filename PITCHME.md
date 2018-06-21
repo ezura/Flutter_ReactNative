@@ -69,6 +69,30 @@ class AwkwardScrollingImageWithText extends Component {
 ```
 
 
++++
+
+自作の native の View `TheGreatestComponentInTheWorld` 使いたい場合
+
+```javascript
+import React, { Component } from 'react';
+import { Text, View } from 'react-native';
+import { TheGreatestComponentInTheWorld } from './your-native-code';
+
+class SomethingFast extends Component {
+  render() {
+    return (
+      <View>
+        <TheGreatestComponentInTheWorld />
+        <Text>
+          TheGreatestComponentInTheWorld could use native Objective-C,
+          Java, or Swift - the product development process is the same.
+        </Text>
+      </View>
+    );
+  }
+}
+```
+
 | |flutter |React Native |
 |---|---|---|
 |language |Dart |JavaScript  |
