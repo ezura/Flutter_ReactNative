@@ -68,6 +68,7 @@ class MyApp extends StatelessWidget {
 * UI は Native の UI を使う
   - native の View を wrap　している
 * iOS: やり方によっては審査通さずにアップデート可能
+* Native code 呼び出さない前提なら [Expo](https://expo.io/) を使うと便利
   
 +++
 
@@ -140,6 +141,16 @@ class AwkwardScrollingImageWithText extends Component {
 ### React Native
 * 可能
 
+---
+
+##  Native の View の中に埋め込めるのか
+
+### flutter
+* 可能 (文書化はされてない)
+
+### React Native
+* 可能
+
 +++
 
 自作の native の View `TheGreatestComponentInTheWorld` 使いたい場合
@@ -163,6 +174,40 @@ class SomethingFast extends Component {
   }
 }
 ```
+
+---
+
+## Design
+
+### flutter
+* 基本的に Material design
+  - iOS に合わせた Widget 群もある
+    - [Cupertino (iOS-style) Widgets  - Flutter](https://flutter.io/widgets/cupertino/)
+    - [Building Beautiful UIs with Flutter](https://codelabs.developers.google.com/codelabs/flutter/#3)
+* 用意されている独自の UI 群 (Widget) を使うので、カスタマイズ可能な部分は Native と勝手が異なる
+  - 用意されている Widget でそのデザインは実現できるかの確認が必要
+  - デザイナーさんとの合意が必要
+
+### React Native
+* Native の UI を使うので違和感は少ない
+  - Native code で作った View を埋め込むこともできる
+
+---
+
+## React Native アプリを Native アプリに戻すことができるか（容易か）
+
+### flutter
+* けっこうコストかかりそう
+  - 書き直し
+  - 独自の UI component を再現できるか (特に iOS)
+  - native の SDK と思想が異なる
+    - React っぽい
+
+### React Native
+* ややコストかかりそう
+  - 書き直し
+  - native の SDK と思想が異なる
+    - React
 
 ---
 
@@ -197,26 +242,38 @@ class SomethingFast extends Component {
 * [Continuous Delivery using Fastlane with Flutter](https://flutter.io/fastlane-cd/)
 
 ### React Native
+* [continuous integration - CI tool for React Native - Stack Overflow](https://stackoverflow.com/questions/47169137/ci-tool-for-react-native)
 * [Bitrise 使う方法](https://qiita.com/jtakahashi64/items/5133358aa55a03137fbc)
-* ノウハウは溜まっている模様
 
 ---
 
-## Design
-
-### flutter
-* 基本的に Material design
-  - iOS に合わせた Widget 群もある
-    - [Cupertino (iOS-style) Widgets  - Flutter](https://flutter.io/widgets/cupertino/)
-    - [Building Beautiful UIs with Flutter](https://codelabs.developers.google.com/codelabs/flutter/#3)
-* 用意されている独自の UI 群 (Widget) を使うので、カスタマイズ可能な部分は Native と勝手が異なる
-  - 用意されている Widget でそのデザインは実現できるかの確認が必要
-  - デザイナーさんとの合意が必要
-
-### React Native
-* Native の UI を使うので違和感は少ない
-  - Native code で作った View を埋め込むこともできる
+# 評判
+* [Android / iOS アプリの開発にクロスプラットフォームの Flutter を実戦投入した｜najeira｜note](https://note.mu/najeira/n/n8924408dd07b)
+* [Flutter vs React Native- What You Need To Know. – Dmytro Dvurechenskyi from openGeeksLab – Medium](https://medium.com/@openGeeksLab/flutter-vs-react-native-what-you-need-to-know-89451da3c90b)
+* [React Native, Flutter, Xamarin: a comparison](https://blog.novoda.com/react-native-flutter-xamarin-a-comparison/)
+* [React NativeでiOSアプリを作ってストアでリリースしてみた](https://qiita.com/ariiyu/items/81154c45b8b37feb8009)
+* [Sunsetting React Native – Airbnb Engineering & Data Science – Medium](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
+* [いつ ReactNative を使っても大丈夫か - mizchi’s blog](http://mizchi.hatenablog.com/entry/2018/06/20/115539)
 
 ---
 
-## 
+## flutter
+
+### 良い点
+* 静的な型付け
+* async / await 
+* OS 間での UI の差がない
+* Widget は充実している
+* 70% くらい flutter で書けている
+  - 
+
+### 欠点
+* まだバグが多い
+  - issue は 2000 以上
+* ライブラリがまだ充実してない
+
+---
+
+## React Native
+
+---
