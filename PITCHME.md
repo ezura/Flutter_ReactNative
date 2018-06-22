@@ -191,9 +191,11 @@ class SomethingFast extends Component {
 
 ---
 
-## テスト
+## CI
 
 ### flutter
-* Dart の言語自体に Test が付属している
+* [Continuous Delivery using Fastlane with Flutter](https://flutter.io/fastlane-cd/)
 
 ### React Native
+* [Bitrise 使う方法](https://qiita.com/jtakahashi64/items/5133358aa55a03137fbc)
+* ノウハウは溜まっている模様
