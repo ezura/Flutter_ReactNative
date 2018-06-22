@@ -199,3 +199,12 @@ class SomethingFast extends Component {
 ### React Native
 * [Bitrise 使う方法](https://qiita.com/jtakahashi64/items/5133358aa55a03137fbc)
 * ノウハウは溜まっている模様
+
+---
+
+## Design
+
+### flutter
+* Material design に引っ張られる
+  - Material 統一
+### React Native
