@@ -314,4 +314,6 @@ class SomethingFast extends Component {
 
 ## 共通
 * bridge 書くのと保守するの大変
-* Android と iOS の
+* デバイス周りの処理が多い場合は共通化するのが難しくなる
+  - UI なら共通化できるし活躍できる
+
