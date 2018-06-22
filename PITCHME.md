@@ -297,3 +297,21 @@ class SomethingFast extends Component {
   - 「最初は Native のエンジニアが足りなかったから React Native を使っていたけれど、今は Native のエンジニアいるので無理して React Native 使わなくても Native で作れるし…」
 
 ---
+
+# まとめ
+
+## flutter
+* Dart
+  - 静的型付け (動的っぽいとは思うけど…)
+* まだまだバグ多い
+* iOS 向けのデザインもある
+* デザインに制約がかかる
+  
+## React Native
+* Native の UI を使う
+* JavaScript
+* 安定してきてる
+
+## 共通
+* bridge 書くのと保守するの大変
+* Android と iOS の
