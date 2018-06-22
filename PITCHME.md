@@ -205,6 +205,18 @@ class SomethingFast extends Component {
 ## Design
 
 ### flutter
-* Material design に引っ張られる
-  - Material 統一
+* 基本的に Material design
+  - iOS に合わせた Widget 群もある
+    - [Cupertino (iOS-style) Widgets  - Flutter](https://flutter.io/widgets/cupertino/)
+    - [Building Beautiful UIs with Flutter](https://codelabs.developers.google.com/codelabs/flutter/#3)
+* 用意されている独自の UI 群 (Widget) を使うので、カスタマイズ可能な部分は Native と勝手が異なる
+  - 用意されている Widget でそのデザインは実現できるかの確認が必要
+  - デザイナーさんとの合意が必要
+
 ### React Native
+* Native の UI を使うので違和感は少ない
+  - Native code で作った View を埋め込むこともできる
+
+---
+
+## 
