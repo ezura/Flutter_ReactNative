@@ -222,6 +222,16 @@ class SomethingFast extends Component {
 * ライブラリ使う
   - https://medium.com/@danielsternlicht/adding-localization-i18n-g11n-to-a-react-native-project-with-rtl-support-223f39a8e6f2
   - json に書く
+  
+---
+
+## 環境毎に設定切り替えられるか
+
+### flutter
+*  [環境ごとの設定](https://qiita.com/gki/items/db9bac1e6eece826f564#%E7%92%B0%E5%A2%83%E3%81%94%E3%81%A8%E3%81%AE%E8%A8%AD%E5%AE%9A)
+
+### React Native
+*  [react-native-dotenv で定数を環境ごとに切り替える](https://qiita.com/hotchpotch/items/f5661def49e0f54ec276)
 
 ---
 
