@@ -255,7 +255,7 @@ class SomethingFast extends Component {
 * [Sunsetting React Native – Airbnb Engineering & Data Science – Medium](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
 * [いつ ReactNative を使っても大丈夫か - mizchi’s blog](http://mizchi.hatenablog.com/entry/2018/06/20/115539)
 
----
++++
 
 ## flutter
 
@@ -265,15 +265,35 @@ class SomethingFast extends Component {
 * OS 間での UI の差がない
 * Widget は充実している
 * 70% くらい flutter で書けている
-  - 
+  - UI 周りの実装が中心のアプリ
+  - デバイス周り(カメラとか　bluetooth とか)での実装が必要だと割合下がる
+* Google の出しているアプリの一部は flutter で実装されている
 
 ### 欠点
 * まだバグが多い
   - issue は 2000 以上
+* 情報が少ない
+  - flutter の中身を読んで理解
 * ライブラリがまだ充実してない
+* Native の View とは一つの画面で混在するのはできるけど難しい
+* デザイナーさんに flutter が得意なデザインを知ってもらう必要がある
 
 ---
 
 ## React Native
+
+### 良い点
+* ライブラリが充実している
+* Web のエンジニアにとって導入コストが低かった
+* Instagram や facebook でも使われている
+
+### 欠点
+* Android と iOS のどちらかでバグっているライブラリも多い
+* 速く開発できたが、技術的な負債をかかえていった
+  - React Native で実現しにくいから止めた仕様
+  - Native code との bridge を書くことになる
+* 初期のレンダリングが遅い
+* Airbnb は React Native のコードを Native に書き換える作業をしている
+  - 「最初は Native のエンジニアが足りなかったから React Native を使っていたけれど、今は Native のエンジニアいるので無理して React Native 使わなくても Native で作れるし…」
 
 ---
